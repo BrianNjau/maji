@@ -18,6 +18,7 @@
     "bcrypt": "^5.0.1",
     "bcryptjs": "^2.4.3",
     "chart.js": "^3.6.2",
+    "chartjs-plugin-datalabels": "^2.0.0",
     "cloudinary": "^1.27.1",
     "js-cookie": "^3.0.1",
     "jsonwebtoken": "^8.5.1",

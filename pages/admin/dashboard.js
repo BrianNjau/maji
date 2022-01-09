@@ -10,8 +10,18 @@ import {
   ListItemText,
   Typography,
 } from '@mui/material';
-import { Chart as ChartJS } from 'chart.js/auto';
-import { Chart } from 'react-chartjs-2';
+import {
+  Chart,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend,
+} from 'chart.js';
+
 import { Bar } from 'react-chartjs-2';
 import axios from 'axios';
 import NextLink from 'next/link';
@@ -23,6 +33,16 @@ import { getError } from '../../utils/error';
 import { Store } from '../../utils/Store';
 import useStyles from '../../utils/styles';
 
+Chart.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend
+);
 function reducer(state, action) {
   switch (action.type) {
     case 'FETCH_REQUEST':
